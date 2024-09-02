@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first_lecture</title>
+    </head>
+    <body>
+        
+        <h1><mark>Webservers</mark></h1>
+        <h2>Webservers deffinition</h2>
+        <p>
+            is software that serves web pages to users over the <strong> <a href="https://www.techtarget.com/whatis/definition/Internet"> Internet</a></strong>. When a user enters a URL in their browser, the web server processes the request and delivers the requested content, such as HTML pages, images, or files.
+        </p>
+        <hr> <br>
+        <img src="webserver.jpg" alt="how webserver work img" height="400px" width="1400px">
+       <h2><i>what is the difference between Apachi & Nginx webserver?</i></h2>
+        <dl>
+            <dd>apachi webserver:</dd>
+                <dt>	Due to its process-based model, Apache can consume a significant amount of memory and CPU resources when handling multiple connections. Each request requires its own process or thread, leading to overhead.
+                    	Under high load, this can result in slower performance and potential server bottlenecks.
+                </dt>
+        </dl>
+            <dd>Nginx webserver</dd>
+                <dt>	Nginx’s event-driven architecture allows it to handle many concurrent connections with minimal resource usage. It can serve static files and handle requests without creating new processes for each connection.
+                    	This leads to better performance and responsiveness, especially under high traffic conditions.
+                </dt>
+        </dl>
+    </body>
+</html>
