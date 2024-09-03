@@ -1,28 +1,277 @@
+<!--tell the browser that "you are running hypertext markup lunguage "-->
 <!DOCTYPE html>
+<!--
+    this website to apply what i have learnt from the second week of mentorship 
+    here i am appling my knowledge not only that i learnt in html but git and github else-->
+<!--html is human body which contain every thing in the page including head and tail-->
 <html>
+    <!-- head contain the title and every thing may be run before page loading-->
     <head>
         <title>first_lecture</title>
+        <style>
+            .lecture_three{
+                background-color: rgb(247, 244, 239);
+            }
+             th,td {
+                /* border: 1px solid black; */
+                text-align: center;
+            }
+            .color,th{
+                background-color: rgb(115, 195, 168);
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                }
+        </style>
     </head>
+    <!--body contain every thing appear in your page -->
     <body>
-        
+        <!--six types of heading are found in html arranged from biggest to smallest as h1 h2 h3 h4 h5 h6-->
         <h1><mark>Webservers</mark></h1>
-        <h2>Webservers deffinition</h2>
+        <h2  style="color: rgb(181, 181, 32);background-color: aquamarine;">Webservers deffinition</h2>
+        <!--paragraph tag used to write paragraph inside it-->
         <p>
             is software that serves web pages to users over the <strong> <a href="https://www.techtarget.com/whatis/definition/Internet"> Internet</a></strong>. When a user enters a URL in their browser, the web server processes the request and delivers the requested content, such as HTML pages, images, or files.
         </p>
+        <!--hr for making horizontal line and br for making new line look like enter-->
         <hr> <br>
-        <img src="webserver.jpg" alt="how webserver work img" height="400px" width="1400px">
-       <h2><i>what is the difference between Apachi & Nginx webserver?</i></h2>
-        <dl>
-            <dd>apachi webserver:</dd>
+        <!--src for adding image in your website and contain many attributes but the most one is src which is "source of image contain path of image"-->
+        <img src="webserver.jpg" alt="how webserver work img" height="400px" width="1200px">
+        <!--here i used style attribute to write css code for styling the head-->
+        <h2 style="color:  rgb(181, 181, 32);background-color: aquamarine;">Most popular types of webservers</h2>
+        <!--here i am using unordered list cause the arrangement doesn't matter-->
+        <ul>
+            <!--li tag refere to "list item" used to add each item in list-->
+            <li><a href="https://www.geeksforgeeks.org/difference-between-apache-and-nginx/" target="_blank">Apachi Webserver</a></li>
+            <li><a href="https://www.geeksforgeeks.org/difference-between-apache-and-nginx/">Nginx Webserver</a></li>
+        </ul>
+       <h2 style="color:  rgb(181, 181, 32);background-color: aquamarine;"><i>what is the difference between Apachi & Nginx webserver?</i></h2>
+       <!--dl is the "descriptive list "was inserted in html5--> 
+       <dl>
+            <!--dd is the tag for adding list item of descriptive list and also i used id attribute to link it with there titles in the upper of the page-->
+            <dd id="apachi">apachi webserver:</dd>
                 <dt>	Due to its process-based model, Apache can consume a significant amount of memory and CPU resources when handling multiple connections. Each request requires its own process or thread, leading to overhead.
                     	Under high load, this can result in slower performance and potential server bottlenecks.
                 </dt>
-        </dl>
-            <dd>Nginx webserver</dd>
+            <dd id="Nginx">Nginx webserver</dd>
                 <dt>	Nginx’s event-driven architecture allows it to handle many concurrent connections with minimal resource usage. It can serve static files and handle requests without creating new processes for each connection.
                     	This leads to better performance and responsiveness, especially under high traffic conditions.
                 </dt>
         </dl>
+        <div class="lecture_three">
+            <h2>apply what you learnt in lecture three </h2>
+
+            
+            <div>
+                <h3 id="table">table task </h3>
+                <table style="border: 1px solid black;">
+                    <tr>
+                        <th colspan="2" class="color"> </th>
+                        <th>2003-2004 <small><sup>[11]</sup></small></th>
+                        <th>2005-2006 <small><sup>[12][15]</sup></small></th>
+                        <th>2007-2008 </th>
+                        <th colspan="2">2009-2012 <small><sup>[38][39][40][41]</sup></small></th>
+                        <th>2013-present</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Model ID <sub>(s)</sub></strong></td>
+                        <td colspan="3">CBR600RR</td>
+                        <td colspan="3">CBR600RR <br>CBR600RA(combined ABS)</td>
+                    </tr>
+                    <!-- <tr colspan="6"><strong>engine</strong></tr> -->
+                     <tr>
+                        <td colspan="8" class="color"><strong>Engine</strong></td>
+                     </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Engine type</strong> </td>
+                        <td colspan="6">599 cc(36.6 cu in)liquid-cooled inline four-cylinder</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Bore*stroke</strong></td>
+                        <td colspan="6">67.0mm*42.5mm(2.64in*1.67 in)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong> Compression ratio</strong></td>
+                        <td colspan="2">12.0:1</td>
+                        <td colspan="4">12.2:1 <sup>[42]</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Valvetrain</strong></td>
+                        <td colspan="6">DOHC; four valves per cylinder </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Fuel delivery</strong></td>
+                        <td colspan="2">Dual Stage Fuel Injection (DSFI) </td>
+                        <td colspan="4">Dual Stage Fuel Injection (DSFI) with 40 mm (1.6 in) throttle <br> bodies, Denso 12-hole injectors </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="color"><strong>Ignition</strong></td>
+                        <td colspan="6">Computer-controlled digital transistorized with three-dimensional mapping</td>
+                    </tr>
+
+                   <tr>
+                        <td rowspan="2" class="color"><strong>Power</strong></td>
+                        <td  class="color"><strong>Crankshaft <br>(claimed)</strong></td>
+                        <td colspan="2">87 kW (117 bhp) @ 13000 rpm</td>
+                        <td colspan="4">88 kW (118 bhp) @ 13500 rpm <sup>[43]</sup></td>
+                   </tr>
+                   <tr>
+                        <td class="color"><strong>Rear <br>wheel <br>(tested)</strong></td>
+                        <td >79.9 kW <br> (107.2 hp) @ <br> 13,500 rpm <sup>[44]</sup></td>
+                        <td>74.9–78.7 kW <br> (100.4– <br> 105.6 hp) @ <br> 13,250 rpm <sup>[45][17]</sup></td>
+                        <td> 87.7 kW <br> (104.5hp) @ <br> 14,100 rpm <sup>[46]</sup></td>
+                        <td>72.85- <br>74.28 kW <br>(97.7- <br> 99.61 hp) <sup>[40][46]</sup></td>
+                        <td>   <span>      </span>    </td>
+                        <td>75.0 kW <br>(100.6 hp) @ <br> 12,500 rpm <sup>[47]</sup></td>
+                    </tr>
+                    <tr>
+                        <td class="color"><strong>Torque</strong></td>
+                        <td  class="color"><strong>Crankshaft <br>(claimed)</strong></td>
+                        <td colspan="2">64 N⋅m (47 lbf⋅ft) @ <br>11,000 rpm </td>
+                        <td colspan="4">66 N⋅m (49 lbf⋅ft) @ 11,250 rpm <sup>[43]</sup> </td>
+                    </tr>
+                    <tr>
+                        <td class="color"><strong>Rear <br>wheel <br>(tested)</strong></td>
+                        <td  class="color">61.6 N⋅m <br>(45.4 lb⋅ft) @ <br>11,000 <sup>[44]</sup></td>
+                        <td>60.7–65.2 N⋅m <br> (44.8– <br>48.1 lb⋅ft) @ <br>10,750 <sup>[17][45]</sup></td>
+                        <td>62.5 N⋅m <br> (46.1 lb⋅ft) @ <br>12,400 rpm <sup>[46]</sup></td>
+                        <td>56.81– <br>58.31 N⋅m <br> (41.9– <br>43.01 lb⋅ft) <br><sup>[40][46]</sup></td>
+                        <td>    </td>
+                        <td>60.7 N⋅m <br>(44.8 lb⋅ft) @ <br> 10,600 rpm. <br><sup>[48]</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" class="color"> <strong>Drivetrain</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Transmission</strong></td>
+                        <td colspan="6">Close-ratio six-speed</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Final drive</strong></td>
+                        <td colspan="6">#525 O-ring-sealed chain</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="color"><strong>Suspension</strong></td>
+                        <td class="color"><strong>Front</strong></td>
+                        <td>45.0 mm (1.77 in) <br> Honda Multi- <br>Action System <br> (HMAS) <br>cartridge fork <br> with spring <br>preload, <br>rebound and <br> compression <br> damping <br> adjustability; <br> 120 mm <br>(4.7 in) travel</td>
+                        <td colspan="4">41.0 mm (1.61 in) inverted HMAS cartridge fork with spring- <br>preload, rebound and compression-damping adjustability; <br> 120 mm (4.7 in) travel </td>
+                        <td colspan="2">41 mm (1.6 in) <br> inverted Big <br>Piston Fork with <br> spring preload,<br> rebound and <br> compression <br> damping <br>adjustability </td>
+                    </tr>
+                    <tr>
+                        <td  class="color"><strong >Rear</strong></td>
+                        <td>Unit Pro-Link <br> HMAS single shock <br>with spring preload, <br> rebound and <br> compression <br>damping <br>adjustability; <br> 120 mm (4.7 in) <br>travel </td>
+                        <td colspan="5">Unit Pro-Link HMAS single shock with spring-preload, rebound and compression- <br>damping adjustability; 130 mm (5.1 in) travel </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="color"><strong>Tire</strong></td>
+                        <td  class="color"><strong>Front</strong></td>
+                        <td colspan="6"> 120/70ZR-17 radial</td>
+                    </tr>
+                    <tr>
+                        <td class="color"><strong>Rear</strong></td>
+                        <td colspan="6"> 180/55ZR-17 radial</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="color"><strong>Brakes</strong></td>
+                        <td  class="color"><strong>Front</strong></td>
+                        <td>Dual four-piston <br>calipers with <br>310.0 mm <br> (12.20 in ) discs</td>
+                        <td colspan="2">Dual radial-mounted four-piston <br>clipers with 310.0 mm (12.20 in) <br>discs</td>
+                        <td>Dual radial- <br>mounted Mono- <br>block four- <br>piston calipers <br> with 310.0 mm <br> (12.20 in) discs</td>
+                        <td colspan="2"> Dual radial-mounted Mono- <br>block four-piston calipers <br>with 310.0 mm (12.20 in) <br>discs Honda electronic <br> Combined ABS</td>
+                    </tr>
+                    <tr>
+                        <td class="color"> <strong>Rear</strong></td>
+                        <td colspan="4"> single piston caliper with 220.0 mm (8.66 in) disc</td>
+                        <td colspan="2">Single piston caliper with <br>220.0 mm (8.66 in)disc, <br>electronic combined ABS</td>
+                    </tr>
+                    <tr><td colspan="8" class="color"><strong>Dimentions</strong></td></tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Rake</strong></td>
+                        <td colspan="2">24.0</td>
+                        <td colspan="4">23.9</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Trail</strong></td>
+                        <td colspan="2">95.0 mm (3.74 in)</td>
+                        <td colspan="4">97.7 mm (3.85 in)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Wheelbase</strong></td>
+                        <td colspan="2">1,390 mm (54.7 in)</td>
+                        <td colspan="4">1.370 mm (53.9 in)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Seat height</strong></td>
+                        <td colspan="6">820 mm(32.3 in)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Dry weight</strong></td>
+                        <td>170 kg (270 ib) <sup>[11]</sup></td>
+                        <td>164 kg (261 ib) <br> <sup>[12][15]</sup></td>
+                        <td>156 kg (345 ib) <br> <sup>[49]</sup></td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Dry weight</strong> </td>
+                        <td> </td>
+                        <td>182-182 kg <br>(401-402 ib) <sup>[16]</sup> <br> <sup>[17]</sup></td>
+                        <td>173-175kg <br>(381-385 ib) <br> <sup><small>[18][50][51][52]</small></sup></td>
+                        <td>183 kg (403 ib) <br> (with ABS) <sup><small>[42]</small></sup> <br>175 kg (386 ib) <br> <sup><small>[19]</small></sup></td>
+                        <td>183 kg <br> (403 ib)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Wet weight</strong></td>
+                        <td>202 kg (445 ib) <sup><small>[53]</small></sup></td>
+                        <td>195-195 kg <br>(430-431 ib) <sup><small>[17]</small></sup> <br> <sup> <small>[53]</small></sup></td>
+                        <td>187-188 kg <br> (412-415 ib) <br><sup><small>[51][54]</small></sup></td>
+                        <td>190 kg (410 ib) <br><sup>[38]</sup> <br>187 kg(412 ib) <br> <sup>[18]</sup></td>
+                        <td>196 kg <br>(432 ib) <br><sup>[38]</sup>197 kg <br> (435 ib) <br> <sup>[40]</sup></td>
+                        <td>189kg (417 ib) <br> <sup>[55]</sup></td>
+                    </tr>
+                    <tr> <td colspan="8" class="color"><strong>Performance</strong></td></tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>0 to 60 mph (0 to 97 km/ <br>h)</strong></td>
+                        <td> </td>
+                        <td>3.1 sec. (2005) <br> <sup>[45]</sup> <br> 3.0 sec.(2006) <br> [16]</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>2.9 seconds <br>(2013) <sup>[56]</sup></td>
+                    </tr>
+                    <tr>
+                        <td class="color"><strong>0 to 1/4 mi (0.00 to 0.40 km)</strong></td>
+                        <td  class="color"> </td>
+                        <td>10.98 sec. @ 204.90 km/h <br> (127.32 mph) <br> (2005) <sup>[45]</sup> <br>10.7 sec.@ <br>206.88 km/h <br>(128.55 mph)  <br>(2006)s <sup>[16]</sup></td>
+                        <td>10.52 @ <br>211.47 km/h <br>(131.40 mph) <br><sup>[57] </sup></td>
+                        <td>10.80 @ <br> 207.28 km/h <br>(128.80 mph) <br><sup>[57]</sup></td>
+                        <td> </td>
+                        <td>10.96 @ <br>205.67 km/h <br>(127.80 mph) <br><sup>[57]</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>top speed</strong></td>
+                        <td> </td>
+                        <td>251 km/h <br>(156 mph) <sup>[16] </sup> <br><sup>[45]</sup></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color"><strong>Fuel economy</strong></td>
+                        <td> </td>
+                        <td>6.84 L/100 km; <br>41.3 mpg- <small>imp</small> <br>(34.4 mpg-us) <br><sup>[16][45]</sup></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
     </body>
 </html>
